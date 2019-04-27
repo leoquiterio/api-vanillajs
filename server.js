@@ -18,4 +18,4 @@ app.get('/api', (req, res) => {
     res.sendFile('index.html', { root: __dirname });
 });
 
-app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));
+app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}/`));
