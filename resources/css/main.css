@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body,
+html {
+	height: 100%;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	color: #666;
+	font-size: 14px;
+	padding: 15px 0;
+}
+
+
+.dataContainer {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 0 20px;
+}
+
+.js-todo-itens {
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+	border: solid 1px #d8d8d8;
+	padding: 20px;
+	background: rgba(137, 226, 169, 0.3);
+}
+.js-todo-itens.no-completed {
+	background: rgba(226, 137, 137, 0.3);
+}
+.js-todo-itens:hover {
+	border: solid 1px #999;
+}
+
+.js-todo-itens small {
+	display: block;
+	margin-right: 15px;
+}
+
+.js-todo-itens b {
+	display: block;
+	margin-right: 15px;
+	flex: 1;
+}
+
+.js-todo-itens span {
+	display: block;
+	color: green;
+}
+.js-todo-itens span.no-completed {
+	color: red;
+}
